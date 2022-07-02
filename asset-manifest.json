@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/duelrealms/static/css/main.7f81b011.chunk.css",
-    "main.js": "/duelrealms/static/js/main.ed30f4ec.chunk.js",
-    "main.js.map": "/duelrealms/static/js/main.ed30f4ec.chunk.js.map",
+    "main.js": "/duelrealms/static/js/main.83180e51.chunk.js",
+    "main.js.map": "/duelrealms/static/js/main.83180e51.chunk.js.map",
     "runtime-main.js": "/duelrealms/static/js/runtime-main.0d4aa3fe.js",
     "runtime-main.js.map": "/duelrealms/static/js/runtime-main.0d4aa3fe.js.map",
     "static/css/2.3040732f.chunk.css": "/duelrealms/static/css/2.3040732f.chunk.css",
@@ -44,6 +44,6 @@
     "static/css/2.3040732f.chunk.css",
     "static/js/2.c2bca46d.chunk.js",
     "static/css/main.7f81b011.chunk.css",
-    "static/js/main.ed30f4ec.chunk.js"
+    "static/js/main.83180e51.chunk.js"
   ]
 }
