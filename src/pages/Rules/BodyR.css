@@ -1,0 +1,80 @@
+
+
+.duel__bodyR {
+    display: flex;
+    justify-content: center;
+}
+
+
+.duel__bodyR-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+}
+
+.duel__bodyR-content_container {
+
+
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    align-self: center;
+    color: white;
+    flex-direction: column;
+    padding: 3rem 10rem;
+
+
+}
+
+.duel__bodyR-content_container h1 {
+    font-family: 'Quantico';
+    font-weight: 400;
+    color: #ffffff;
+    align-self: center;
+    padding-bottom: 20px;
+    font-size: 36px;
+
+}
+
+.duel__bodyR-content_container p {
+
+    font-family: 'Quantico';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    align-self: center;
+    color: white;
+
+}
+
+@media screen  and (max-width: 1050px) {
+    .duel__bodyR-content_container {
+        font-size: 14px;
+        padding: 2rem 2rem;
+    }
+    
+}
+
+@media screen  and (max-width: 650px) {
+    .duel__bodyR-content_container {
+        font-size: 14px;
+        padding: 2rem 2rem;
+    }
+    
+}
+
+@media screen  and (max-width: 450px) {
+    .duel__bodyR-content_container {
+        font-size: 14px;
+        flex-wrap: wrap;
+        padding: 2rem 2rem;
+    }
+    
+}

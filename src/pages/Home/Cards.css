@@ -1,0 +1,50 @@
+  .duel__card {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .duel__cards-content {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+
+  }
+
+  .duel__cards-content_mobile {
+    display: none;
+  }
+
+
+
+
+  @media screen and (max-width: 1050px) {
+    .duel__card {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .duel__cards-content {
+      display: none;
+  }
+
+  .duel__cards-content_mobile {
+    display: flex;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .duel__cards-content {
+        display: none;
+    }
+
+}

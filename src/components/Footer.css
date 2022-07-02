@@ -1,0 +1,34 @@
+
+
+.duel__footer-content {
+    width: 100vw;
+    background-image: linear-gradient(
+      90deg,
+      #eea518 0%,
+      rgba(220, 102, 64, 0) 98%
+    );
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Quantico';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media screen  and (max-width: 1050px) {
+
+  .duel__footer-content {
+    font-size: 18px;
+  }
+  
+}
+
+@media screen  and (max-width: 650px) {
+
+  .duel__footer-content {
+    font-size: 12px;
+  }
+  
+}

@@ -1,0 +1,71 @@
+.duel__team-card {
+    width: 100vw;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .duel__team-card_content {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+
+  }
+
+
+  .duel__team-card_content2 {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .duel__teamcard-double {
+    padding-right: 8rem;
+  }
+
+
+
+  @media screen and (max-width: 1050px) {
+    .duel__team-card {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .duel__team-card_content {
+        margin: 0 0 3rem;
+        flex-direction: column;
+        align-content: center;
+    }
+    .duel__team-card_content2 {
+        margin: 0 0 3rem;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .duel__teamcard-double {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .duel__team-card_content {
+        margin: 0 0 3rem;
+        flex-direction: column;
+        align-content: center;
+    }
+    .duel__team-card_content2 {
+        margin: 0 0 3rem;
+        flex-direction: column;
+        align-content: center;
+    }
+
+}

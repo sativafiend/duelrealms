@@ -1,0 +1,286 @@
+.duel__navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    
+}
+
+.duel__navbar-ribbon {
+    width: 100vw;
+    background-image: linear-gradient(
+      90deg,
+      #eea518 0%,
+      rgba(220, 102, 64, 0) 98%
+    );
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    opacity: 0.03s;
+    position: absolute;
+
+}
+
+.duel__navbar-socials_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    padding: 0 12rem 0 0;
+    justify-content: flex-end;
+
+
+}
+
+
+.duel__navbar-links {
+    flex:1; 
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+a { 
+    color: unset;
+    font-family: 'Quantico';
+    text-decoration: none;
+}
+
+.duel__navbar-links_logo {
+    background: transparent;  
+    z-index: 10;
+}   
+
+.duel__navbar-links_logo img {
+    width: 219px;
+    height: 226px;
+}
+
+.duel__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 23rem;
+}
+
+.active, .duel__navbar-links_container :hover{
+    color: black;
+ }
+
+
+
+
+
+
+
+.duel__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+
+.duel__navbar-links_container p,
+.duel__navbar-sign p,
+.duel__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    
+
+    
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+
+.duel__navbar-sign_button {
+    padding: 0.5rem 3rem;
+    background: linear-gradient(180deg, #F1AA40 0%, rgba(188, 88, 74, 0.65) 100%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Quantico';
+    margin-left: 8rem;
+}
+
+
+.duel__navbar-sign_button :hover{
+    color: white;
+ }
+ 
+
+.duel__navbar-wallet svg {
+    cursor: pointer;
+}
+
+.duel__navbar-menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 4rem;
+    position: absolute;
+    margin-top: 1rem;
+    border-radius: 5px;
+
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+    background-color: black;
+}
+
+.duel__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.duel__navbar-menu_container-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+.duel__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .duel__navbar-links_container {
+        display: none;
+    }
+
+    .duel__navbar {
+        margin-top: 5rem;
+    }
+
+    .duel__navbar-menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    .duel__navbar-links {
+        display: none;
+    }
+
+    .duel__navbar-links_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .duel__navbar-mobile {
+        display: flex;
+        border-bottom: 5px solid #F1AA40;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .duel__navbar {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .duel__navbar-sign_button-menu {
+        background-color: black;
+        border-radius: 1px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Quantico';
+        
+        
+    }
+
+  .duel__navbar-sign_button {
+    display: none;
+    }
+
+    .duel__navbar-links_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+    .duel__navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .duel__navbar-sign {
+        display: none;
+    }
+
+    .duel__navbar-socials_container {
+
+        display: none;
+    }
+
+
+    .duel__navbar-links_logo img {
+        width: 150px;
+        height: 154.79px;
+    
+    }
+
+    .duel__navbar-links_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .duel__navbar-menu_container {
+
+        top: 20px;
+    }
+
+    .duel__navbar-menu_container-links-sign {
+
+        display: block;
+    }
+
+
+    .duel__navbar-sign_button {
+        background-color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Quantico';
+        border-color: white;
+        color: white;
+      }
+
+
+}

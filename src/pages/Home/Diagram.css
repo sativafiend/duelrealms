@@ -1,0 +1,42 @@
+.duel__diagram {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .duel__hallowcard {
+    display: none;
+  }
+
+
+
+  @media screen and (max-width: 1050px) {
+
+    .duel__diagram {
+        flex-direction: column;
+        align-content: center;
+        margin: 0 0 3rem;
+    }
+
+    .duel__diagram img {
+      height: 300px;
+      width: 550px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+  .duel__diagram img {
+    height: 222px;
+    width: 400px;
+  }
+
+
+  .duel__hallowcard {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 0 3rem;
+  }
+}

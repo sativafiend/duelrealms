@@ -1,0 +1,104 @@
+
+
+.duel__body {
+    width:  100vw;
+    display: flex;
+
+}
+
+.duel__body-content {
+
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.duel__body-content h1 {
+    font-size: 48px;
+    font-family: 'Quantico';
+    font-weight: 400;
+    color: #ffffff;
+    align-self: center;
+}
+
+.duel__body-content h2 {
+    font-size: 24px;
+    font-family: 'Quantico';
+    font-weight: 400;
+    color: #eea518;
+    align-self: center;
+    padding:  1rem 6rem;
+
+}
+
+.duel__body-content p {
+    font-size: 24px;
+    font-family: 'Quantico';
+    font-weight: 400;
+    color: #ee4b17;
+  
+}
+
+.duel__body-content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .duel__body {
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+    .duel__body-content_container {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .duel__body Text {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .duel__body-content {
+        text-align: center;
+    }
+
+    .duel__body-content h1 {
+        font-size: 32px;
+        font-family: 'Quantico';
+        font-weight: 400;
+        color: #ffffff;
+        align-self: center;
+        padding-bottom: 20px;
+    }
+    
+    .duel__body-content h2 {
+        font-size: 20px;
+        font-family: 'Quantico';
+        font-weight: 400;
+        color: #eea518;
+        align-self: center;
+    }
+    
+    .duel__body-content p {
+        font-size: 20px;
+        font-family: Quantico;
+        font-weight: 400;
+        color: #ee4b17;
+        display: contents;
+      
+    }
+
+}

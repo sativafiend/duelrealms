@@ -11,8 +11,7 @@ const Menu = () => (
   <>
     <p><a href="/Home">Home</a></p>
     <p><a href="/Whitepaper">Whitepaper</a></p>
-    <p><a href="/Rules">Rules</a></p>
-    <p><a href="/Team">Team</a></p>    
+    <p><a href="/Rules">Rules</a></p>  
     <p><a href="/Almanac">Almanac</a></p>
     <p><a href="/Marketplace">Marketplace</a></p>
     <p><a href="/Team">Team</a></p>  
@@ -55,7 +54,12 @@ export const Navbar = ({}) => {
                     ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
                     : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
                     }
-                    {toggleMenu && (
+                    
+                    </div> 
+          <div className='duel__navbar-links_logo'>
+                <img src={"https://file.rendit.io/n/4zKWXI28EaIq9KGb9GRS.png"} alt="logo" />
+              </div>
+              {toggleMenu && (
                       <div className='duel__navbar-menu_container scale-up-center'>
                         <div className='duel__navbar-menu_container-links'>
                           <Menu2 />
@@ -67,10 +71,6 @@ export const Navbar = ({}) => {
                         </div>
                       </div>
                     )}
-                    </div> 
-          <div className='duel__navbar-links_logo'>
-                <img src={"https://file.rendit.io/n/4zKWXI28EaIq9KGb9GRS.png"} alt="logo" />
-              </div>
             <div className='duel__navbar-ribbon'>
                 <div className='duel__navbar-links'>
                   <div className='duel__navbar-links_container'>

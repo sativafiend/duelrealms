@@ -1,0 +1,31 @@
+.duel__bodyM  {
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin: auto;
+    align-items: flex-end;
+    padding: 32px 0px 41px 0px;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.discordapp.com/attachments/927271953721618563/991145720272912445/unknown.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.duel__bodyM-container {
+    display: flex;
+    margin: auto;
+    align-items: left;
+    padding: 287px 1146px 41px 0px;
+
+}
+
+.duel__bodyM-container h1 {
+    font-family: 'Quantico';
+    font-weight: 400;
+    color: #ffffff;
+    align-self: center;
+    padding-bottom: 20px;
+    font-size: 36px;
+
+}

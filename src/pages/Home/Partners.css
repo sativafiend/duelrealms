@@ -1,0 +1,42 @@
+.duel__partners {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+
+  .duel__partners-content {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+
+  }
+
+
+
+
+  @media screen and (max-width: 1050px) {
+    .duel__partners{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .duel__partners-content {
+        margin: 0 0 3rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .duel__partners-content {
+        display: none;
+    }
+
+}
