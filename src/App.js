@@ -30,7 +30,7 @@ export default function App() {
         <Route path="/Team" element={<Team />} />
       </Routes>
     </Router>
-    {/* <ScrollButton /> */}
+    <ScrollButton />
     <Footer />
     </div>
   );
