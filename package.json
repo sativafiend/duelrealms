@@ -36,7 +36,7 @@
     "starter"
   ],
   "main": "src/index.js",
-  "homepage": "http://sativafiend.github.io/duelrealms",
+  "homepage": "https://sativafiend.github.io/duelrealms",
   "name": "react",
   "scripts": {
     "build": "react-scripts build",
