@@ -2,15 +2,14 @@ import React from 'react';
 import styled from "styled-components";
 import { ButtonLabel} from "../components/Button.style";
 import {btnhandler} from "./Metamask";
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import "./Navbar.css";
 import { useState } from 'react';
-
+import wallet  from '../Images/wallet.png';
 
 const Menu = () => (
   <>
     <p><a href="/Home">Home</a></p>
-    <p><a href="/Whitepaper">Whitepaper</a></p>
+    <p><a href="/Whitepaper">Litepaper</a></p>
     <p><a href="/Rules">Rules</a></p>  
     <p><a href="/Almanac">Almanac</a></p>
     <p><a href="/Marketplace">Marketplace</a></p>
@@ -35,9 +34,19 @@ const WalletButton = () => (
   </div>
 )
 
+
+
+
 export const Navbar = ({}) => {
 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!setHamburgerOpen)
+  }
 
     const twitterBtnClick = () => {
         window.open("https://twitter.com/DuelRealms");
@@ -46,31 +55,20 @@ export const Navbar = ({}) => {
       window.open("https://discord.gg/duelrealms");
   }
 
+
     return (
       <>
           <div className='duel__navbar duel__navbar-mobile'>
             <div className='duel__navbar-menu'>
-                  {toggleMenu
-                    ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-                    : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
-                    }
-                    
-                    </div> 
-          <div className='duel__navbar-links_logo'>
+                <p><a href="/MobileNav">☰</a></p>
+              </div> 
+              <div className='duel__navbar-links_logo'>
                 <img src={"https://file.rendit.io/n/4zKWXI28EaIq9KGb9GRS.png"} alt="logo" />
               </div>
-              {toggleMenu && (
-                      <div className='duel__navbar-menu_container scale-up-center'>
-                        <div className='duel__navbar-menu_container-links'>
-                          <Menu2 />
-                          <div className='duel__navbar-sign_button-menu'>
-                          <button style={{backgroundColor: "black", 
-                            color: 'white', border: '2px solid #fff'}} onClick={btnhandler}>
-                            CONNECT WALLET</button>
-                            </div>
-                        </div>
-                      </div>
-                    )}
+
+              <div className='duel__navbar-menu_wallet' onClick={btnhandler}>
+                    <img src={wallet} />
+                </div> 
             <div className='duel__navbar-ribbon'>
                 <div className='duel__navbar-links'>
                   <div className='duel__navbar-links_container'>
@@ -94,6 +92,7 @@ export const Navbar = ({}) => {
                 src={"https://file.rendit.io/n/jvcdNxVanIj2MIJVuZRP.png"}
             />
         </div>
+        
   </>
     )
 }

@@ -54,10 +54,25 @@
 
 }
 
+.duel__bodyR-content_container img {
+    width: 1039px;
+    height: 605px;
+}
+
+.duel__BodyR-mobile_container {
+    display: none;
+}
+
 @media screen  and (max-width: 1050px) {
     .duel__bodyR-content_container {
         font-size: 14px;
         padding: 2rem 2rem;
+    }
+
+
+    .duel__bodyR-content_container img {
+        width: 691px;
+        height: 412px;
     }
     
 }
@@ -67,14 +82,25 @@
         font-size: 14px;
         padding: 2rem 2rem;
     }
+
+    .duel__bodyR-content_container img {
+        width: 291px;
+        height: 212px;
+    }
     
 }
 
 @media screen  and (max-width: 450px) {
     .duel__bodyR-content_container {
-        font-size: 14px;
-        flex-wrap: wrap;
-        padding: 2rem 2rem;
+        display: none;
+    }
+
+    .duel__bodyR-content_container img {
+        display: none;
+    }
+
+    .duel__BodyR-mobile_container {
+        display: flex;
     }
     
 }

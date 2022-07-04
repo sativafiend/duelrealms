@@ -1,19 +1,60 @@
 .duel__pdf-container {
     align-items: left;
     padding-left: 12rem;
+
+    width:750px;
+    height: 120px;
+}
+
+.duel__pdf-container button {
+
+    width:750px;
+    height: 120px;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.duel__pdf-container button img {
+
+    width:750px;
+    height: 120px;
 }
 
 
 @media screen  and (max-width: 650px) {
+
+    .duel__pdf-container button {
+
+        width:550px;
+        height: 80px;
+    }
+
+    .duel__pdf-container button img{
+
+        width:550px;
+        height: 80px;
+    }
+
     .duel__pdf-container {
-        display: none;
+        padding-left: 2rem;
+        padding-top: 6rem;
     }
     
 }
 
 @media screen  and (max-width: 450px) {
+
+    .duel__pdf-container button {
+
+        width:550px;
+        height: 80px;
+    }
+
     .duel__pdf-container {
-        display: none;
+        padding-left: 2rem;
+        padding-top: 6rem;
     }
     
 }

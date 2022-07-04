@@ -1,5 +1,7 @@
 import React from 'react';
 import './BodyR.css';
+import gameplay from '../../Images/gameplay.png';
+import Collapsible from 'react-collapsible';
 
 export const BodyR = () => {
 
@@ -68,6 +70,9 @@ export const BodyR = () => {
                     <div className='duel__bodyR-content_container'>
                         <h1 id="text6">How To Lose</h1><br></br>
                             The first player who runs out of life points loses.
+                    </div>
+                    <div className='duel__bodyR-content_container'>
+                        <img src={gameplay} />
                     </div>
                     <div className='duel__bodyR-content_container'>
                         <h1 id="text7">Duel Realms Cards</h1><br></br>
@@ -153,6 +158,19 @@ export const BodyR = () => {
                             N. A creature of PP 3 that is revived can attack in the same turn.<br></br>
                         </div>
 
+                    </div>
+
+                    <div className='duel__BodyR-mobile_container'>
+                    <Collapsible trigger="Game Actions" >
+                        <p>
+                            This is the collapsible content. It can be any element or React
+                            component you like.
+                        </p>
+                        <p>
+                            It can even be another Collapsible component. Check out the next
+                            section!
+                        </p>
+                    </Collapsible>
                     </div>
 
                 </div>

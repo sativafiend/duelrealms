@@ -1,10 +1,10 @@
 import React from "react";
-import {pdfButton as PDFButton} from "../components/Button.style";
 import { saveAs } from "file-saver";
 import pdfImage from "../Images/tabletopRules.png";
 import {HeaderR as Header} from './Rules/HeaderR';
 import {BodyR as Body} from './Rules/BodyR';
 import './Rules/Rules.css';
+import {Diagram} from "./Home/Diagram";
 
 
 export const Rules = ({}) => {
@@ -16,11 +16,12 @@ export const Rules = ({}) => {
       };
     return (
         <>
-            <div className="duel__pdf-container2">
-                <PDFButton onClick={saveFile}><img src={pdfImage} width= "750px" height="120" /></PDFButton>
-            </div>
             <Header />
             <Body />
+            <Diagram />
+            <div className="duel__pdf-container2">
+                <button onClick={saveFile}><img src={pdfImage} id="pdfButton"/></button>
+            </div>
         </>
     )
 }

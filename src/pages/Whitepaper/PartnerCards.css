@@ -1,0 +1,48 @@
+.duel__partnercards {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+
+  .duel__partnercards-content {
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .duel__partnercards-content img {
+    width: 25%;
+    height: 25%;
+    padding-right: 3rem;
+
+  }
+
+
+
+
+  @media screen and (max-width: 1050px) {
+    .duel__partnercards{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .duel__partnercards-content {
+        margin: 0 0 3rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .duel__partnercards-content {
+        display: none;
+    }
+
+}

@@ -33,10 +33,10 @@
       display: none;
   }
 
-  .duel__cards-content_mobile {
-    display: flex;
-    width: 100%;
-  }
+    .duel__cards-content_mobile {
+      display: flex;
+    }
+
 
 }
 
@@ -45,6 +45,10 @@
 
     .duel__cards-content {
         display: none;
+    }
+
+    .duel__cards-content_mobile {
+      display: flex;
     }
 
 }

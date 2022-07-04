@@ -5,6 +5,7 @@ import {pdfButton as PDFButton} from "../components/Button.style";
 import { HeaderW as Header } from "./Whitepaper/HeaderW.js";
 import { BodyW as Body } from "./Whitepaper/BodyW";
 import './Whitepaper/Whitepaper.css';
+import { PartnerCards } from "./Whitepaper/PartnerCards";
 
 export const Whitepaper = ({}) => {
 
@@ -17,11 +18,12 @@ export const Whitepaper = ({}) => {
 
     return (
         <>
-            <div  className="duel__pdf-container">
-                <PDFButton onClick={saveFile}><img src={pdfImage} width= "750px" height="120" /></PDFButton>
-            </div>
+            {/* <div className="duel__pdf-container">
+                <button onClick={saveFile}><img src={pdfImage} id="pdfButton"/></button>
+            </div> */}
             <Header />
             <Body />
+            <PartnerCards />
         </>
     )
 }

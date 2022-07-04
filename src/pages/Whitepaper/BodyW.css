@@ -32,6 +32,7 @@
 
 }
 
+
 .duel__bodyW-content_container h1 {
     font-family: 'Quantico';
     font-weight: 400;
@@ -76,5 +77,6 @@
         flex-wrap: wrap;
         padding: 2rem 2rem;
     }
+    
     
 }

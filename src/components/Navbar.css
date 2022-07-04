@@ -57,7 +57,7 @@ a {
 }
 
 .duel__navbar-links_logo {
-    background: transparent;  
+    background: transparent; 
     z-index: 10;
 }   
 
@@ -77,10 +77,6 @@ a {
 .active, .duel__navbar-links_container :hover{
     color: black;
  }
-
-
-
-
 
 
 
@@ -128,26 +124,17 @@ a {
     cursor: pointer;
 }
 
-.duel__navbar-menu_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    text-align: center;
-
-    padding: 4rem;
-    position: absolute;
-    margin-top: 1rem;
-    border-radius: 5px;
-
-    box-shadow: 0 0 5 rgba(0,0,0,0.2);
-    background-color: black;
-}
 
 .duel__navbar-menu_container p {
     margin: 1rem 0;
+
 }
+
+.hamburger {
+    display: none;
+}
+
+
 
 .duel__navbar-menu_container-links {
     display: flex;
@@ -157,9 +144,27 @@ a {
     font-size: 20px;
 
 }
-.duel__navbar-menu_container-links-sign {
+
+.duel__navbar-menu {
     display: none;
 }
+
+.duel__navbar-menu_wallet {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+
 
 @media screen and (max-width: 1050px) {
     .duel__navbar-links_container {
@@ -167,13 +172,16 @@ a {
     }
 
     .duel__navbar {
-        margin-top: 5rem;
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
     }
+    
 
     .duel__navbar-menu {
         display: flex;
-        justify-content: flex-start;
-        align-items: left;
+        margin-right: 15rem;
+        margin-bottom: 2rem;
     }
 
     .duel__navbar-links {
@@ -185,13 +193,76 @@ a {
         justify-content: center;
         align-items: center;
         position: absolute;
+        padding-top: 3rem;
     }
 
     .duel__navbar-mobile {
         display: flex;
-        border-bottom: 5px solid #F1AA40;
+        border-bottom: 1px solid #F1AA40;
     }
 
+    .duel__navbar-menu_wallet {
+        display: flex;
+        cursor: pointer;
+        background-color: #211b04;
+        padding: 9px;
+        border: 3px solid #F1AA40;
+        margin-bottom: 2rem;
+    
+      }
+
+      .duel__navbar-menu_wallet img {
+
+        width: 20px;
+        height: 20px;
+    
+      }
+
+      .duel__navbar-socials_container {
+
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        background-color: #211b04;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border: 3px solid #F1AA40;
+        cursor: pointer;
+    }
+    
+    .burger {
+        width: 16px;
+        height: 2.21px;
+        border-radius: 10px;
+        background-color: white;
+        transform-origin: 1px;
+        transition: all 0.3s linear;   
+        margin: 2.5px 0.75rem; 
+    }
+
+    .duel__navbar-menu {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        background-color: #211b04;
+        border: 3px solid #F1AA40;
+        cursor: pointer;
+        font-size: 38px;
+        color: white;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+    
+      }
+
+      .duel__navbar-menu a {   
+        text-decoration: none;
+        color: white;}
 
 
 
@@ -201,10 +272,9 @@ a {
     .duel__navbar {
         background-color: black;
         display: flex;
-        justify-content: center;
-        align-items: center;
         
     }
+
 
 
     .duel__navbar-sign_button-menu {
@@ -230,6 +300,9 @@ a {
 
 
 
+
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -243,10 +316,6 @@ a {
         display: none;
     }
 
-    .duel__navbar-socials_container {
-
-        display: none;
-    }
 
 
     .duel__navbar-links_logo img {

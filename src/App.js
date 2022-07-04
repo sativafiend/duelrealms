@@ -5,6 +5,7 @@ import {Rules} from "./pages/Rules";
 import {Almanac} from "./pages/Almanac";
 import {Marketplace} from "./pages/Marketplace";
 import {Team} from "./pages/Team";
+import {MobileNav} from "./pages/MobileNav";
 import {Navbar} from "./components/Navbar";
 import { ScrollButton } from "./components/ScrollButton";
 import './App.css';
@@ -28,9 +29,10 @@ export default function App() {
         <Route path="/Almanac" element={<Almanac />} />
         <Route path="/Marketplace" element={<Marketplace />} />
         <Route path="/Team" element={<Team />} />
+        <Route path="/MobileNav" element={<MobileNav />} />
       </Routes>
     </Router>
-    <ScrollButton />
+    {/* <ScrollButton /> */}
     <Footer />
     </div>
   );

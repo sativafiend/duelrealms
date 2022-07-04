@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Cards.css';
 import HoverImage from "react-hover-image";
 import iceDragon from "../../Images/ICE_DRAGON.png";
@@ -8,20 +8,16 @@ import megalodon from "../../Images/MEGALODON.png";
 import back from "../../Images/back.png";
 import { CardGlow } from '../../components/Container.style';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import {images } from '../../components/Images';
-import { ImageSlider } from '../../components/ImageSlider';
+import BootstrapCarousel from "../../components/BootstrapCarousel";
 
 export const Cards = () => {
-
-
+      
 
     return (
         <div className='duel__card section__padding' id="home">
-            <div className='duel__cards-content_mobile'>
-                <ImageSlider images={images}/>
-            </div>
+            {/* <div className='duel__cards-content_mobile'>
+                <BootstrapCarousel />
+            </div> */}
             <div className='duel__cards-content'>
                 <CardGlow style={{margin: "0 1rem"}}> 
                     <HoverImage src={back} hoverSrc={iceDragon} />

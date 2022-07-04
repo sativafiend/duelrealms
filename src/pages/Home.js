@@ -4,6 +4,7 @@ import {Cards} from "./Home/Cards";
 import {Body} from "./Home/Body";
 import {Diagram} from "./Home/Diagram";
 import {Partners} from "./Home/Partners";
+import {Team} from './Team'
 
 export const Home = ({}) => {
 
@@ -12,8 +13,8 @@ export const Home = ({}) => {
         <Cards />
         <Header />
         <Body />
-        <Diagram />
-        {/* <Partners /> */}
+        {/* <Diagram /> */}
+        <Partners />
     </>
   );
 };
