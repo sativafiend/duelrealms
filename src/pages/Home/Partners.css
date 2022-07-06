@@ -1,6 +1,6 @@
 .duel__partners {
     display: flex;
-    margin-top: 3rem;
+    margin: 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -14,22 +14,28 @@
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
+    margin-left: 2rem;
 
   }
 
+  
+
+  .duel__partners-content_mobile {
+    display: none;
+  }
 
 
-
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1450px) {
     .duel__partners{
-        flex-direction: column;
+        flex-direction: row;
         align-content: center;
     }
 
+
     .duel__partners-content {
-        margin: 0 0 3rem;
-        flex-wrap: wrap;
+        width: 60%;
     }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -37,6 +43,31 @@
 
     .duel__partners-content {
         display: none;
+    }
+
+    .duel__partners-content_mobile {
+        display: contents;
+    }
+
+    .duel__partners-content_mobile img {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .duel__partners-content {
+        display: none;
+    }
+
+    .duel__partners-content_mobile {
+        display: contents;
+    }
+
+    .duel__partners-content_mobile img {
+        width: 40%;
     }
 
 }

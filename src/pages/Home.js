@@ -2,9 +2,8 @@ import React from "react";
 import {Header} from "./Home/Header";
 import {Cards} from "./Home/Cards";
 import {Body} from "./Home/Body";
-import {Diagram} from "./Home/Diagram";
 import {Partners} from "./Home/Partners";
-import {Team} from './Team'
+import './Home/styles.css'
 
 export const Home = ({}) => {
 
@@ -14,6 +13,9 @@ export const Home = ({}) => {
         <Header />
         <Body />
         {/* <Diagram /> */}
+        <div className='header' style={{color:"#eea518", fontFamily:"Quantico", fontSize:"30px"}}>
+                Confirmed Partnerships
+            </div>
         <Partners />
     </>
   );

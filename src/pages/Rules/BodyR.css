@@ -87,20 +87,20 @@
         width: 291px;
         height: 212px;
     }
+
+    .duel__bodyR {
+        display: none;
+    }
     
 }
 
 @media screen  and (max-width: 450px) {
-    .duel__bodyR-content_container {
-        display: none;
-    }
-
-    .duel__bodyR-content_container img {
+    .duel__bodyR {
         display: none;
     }
 
     .duel__BodyR-mobile_container {
-        display: flex;
+        display: contents;
     }
     
 }

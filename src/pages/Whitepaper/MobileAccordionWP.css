@@ -1,0 +1,49 @@
+
+
+    .accordion-item  {
+        display: none;
+
+    }
+@media screen and (max-width: 650px) {
+
+    .accordion {
+        margin: 2rem;
+        border-radius: 10px;
+      }
+      .accordion-item {
+        display: contents;
+        list-style: none;
+      }
+      .accordion-toggle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #151617;
+        padding: 1em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 10px;
+      }
+      .accordion-toggle:hover {
+        background-color: #151617;
+      }
+      .accordion-toggle h3 {
+        margin: 0;
+        color: white;
+        font-family: 'Quantico';
+        font-size: 16px;
+      }
+      .accordion-content {
+        background-color: #5a5a5b;
+        padding: 0.5rem 1rem;
+        color: white;
+        border-radius: 10px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-family: 'Quantico';
+        font-size: 12px;
+    
+      }
+    
+}

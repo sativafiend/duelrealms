@@ -4,7 +4,7 @@ import './BodyW.css';
 export const BodyW = () => {
 
     return (
-        <div className='duel__bodyW  section__padding' id="home">
+        <div className='duel__bodyW' id="home">
             <div className='duel__bodyW-content'>
                 <div className='duel__bodyW-content_container'>
                     <div className='duel__bodyW-content_container'>
@@ -56,46 +56,48 @@ export const BodyW = () => {
                     <div className='duel__bodyW-content_container'>
                         <h1 id="text8">4. PFP Airdrop </h1><br></br>
                         We will be doing a Snapshot sometime after mint that we will not announce and all holders at the time of the snapshot will get a pfp airdrop of one of our creatures! 
-
-                            <br></br><br></br>
-                                The content and information in this White Paper is subject to change. 
-                                Forward-looking statements should not be construed as promises or guarantees by the Duel Realms team, project, members, or any other individual or organization. 
-                                Any information should not be considered as a recommendation to buy; this is not financial advice. 
-                                All statements presented in this document are strictly informational. 
-                                Duel Realms is not responsible for any direct or indirect loss or damages.
                         </div>
                         <div className='duel__bodyW-content_container'>
                         <h1 id="text8">Duel Realms Marketplace</h1><br></br>
                         Our marketplace will accept partnership tokens, Duel Realms tokens, ETH, & USD to purchase physical foil packs, graded cards, NFTs, Whitelist spots, & Merchandise etc.. <br></br>
-
                         </div>
                         <div className='duel__bodyW-content_container'>
                         <h1 id="text8">Fusion Chamber</h1><br></br>
                         The fusion chamber will make our NFTs deflationary! Holders will be able to take 2 cards and use $DUEL tokens to create a new stronger creature! 
                         The 2 cards that are fused will be burned!
 
+                        </div>
                         <br></br><br></br>
-
-                        Please visit our team page to learn information our team and gameplay rules tab to learn about our gameplay! 
-
+                        <div className='duel__bodyW-content_container'>
+                        The art & developer team will be paid a % of the mint! All other team members will be paid monthly!<br></br>
+                        We have a multi sig wallet set up to protect funds following the mint process. All transactions will be posted inside the server!<br></br><br></br>
+                        Multisig Address <br></br>
+                        0xc9eC0602F3742D8C26de17f28a0a4a1103b869cE<br></br>
+                        duelrealms.eth<br></br>
+                        duelrealmsdev.eth
                         </div>
                         <div className='duel__bodyW-content_container'>
                         <h1 id="text8">Partnership NFT Cards </h1><br></br>
-                        Our partnership NFT collection will be a separate collection from our collector cards. 
-                        Each card will have a 100 copies and only be purchasable by using the partnership tokens! They will be legendary editions! 
-                        They will grant holders the same utilities as collector card holders besides pfp airdrop & free physical starter deck! 
-
-                        <br></br><br></br>
-
-                        Our team will not be taking a % of mint sales. The art & developer team will be paid a % of the mint! All other team members will be paid monthly! 
-                        We have a multi sig wallet set up to protect funds following the mint process
-
+                        We are offering regular whitelist collaborations, alpha partnerships, & diamond partnerships! 
                         </div>
-
-                </div>
+                        <div className='duel__bodyW-content_container'>
+                        <h1 id="text8">Alpha Partnership</h1><br></br>
+                        We have a partnership card collection! Each project we partner with will get their NFT created into a NFT card for our project.<br></br>
+                            - Minted using partnership token<br></br>
+                            - 100 Copies<br></br>
+                            - Y'all decide price & whitelist<br></br>
+                            - 250 Physical Cards shipped directly to y'all (limited editions)<br></br>
+                            - 100 WL spots
+                        </div>
+                        <div className='duel__bodyW-content_container'>
+                        <h1 id="text8">Diamond Partnerships</h1><br></br>
+                        We will release information about diamond partners after mint! 
+                        </div>
 
                 </div>
 
             </div>
+
+        </div>
     )
 }

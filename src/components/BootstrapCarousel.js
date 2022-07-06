@@ -8,12 +8,13 @@ import megalodon from "../Images/MEGALODON.png";
 export default function BootstrapCarousel() {
   return (
     <div>
-      <Carousel>
-        <Carousel.Item>
-            <img 
+      <Carousel className='cardGlow'>
+        <Carousel.Item >
+        <img 
             className="d-block"
             src = {iceDragon}
             alt="Ice Dragon" />
+
         </Carousel.Item>
         <Carousel.Item>
             <img 

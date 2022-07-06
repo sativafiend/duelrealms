@@ -16,7 +16,6 @@
     .duel__diagram {
         flex-direction: column;
         align-content: center;
-        margin: 0 0 3rem;
     }
 
     .duel__diagram img {

@@ -6,6 +6,8 @@ import { HeaderW as Header } from "./Whitepaper/HeaderW.js";
 import { BodyW as Body } from "./Whitepaper/BodyW";
 import './Whitepaper/Whitepaper.css';
 import { PartnerCards } from "./Whitepaper/PartnerCards";
+import { accordionData } from "./Whitepaper/accordionData";
+import MobileAccordionWP from "./Whitepaper/MobileAccordionWP";
 
 export const Whitepaper = ({}) => {
 
@@ -16,12 +18,18 @@ export const Whitepaper = ({}) => {
       };
 
 
+
     return (
         <>
             {/* <div className="duel__pdf-container">
                 <button onClick={saveFile}><img src={pdfImage} id="pdfButton"/></button>
             </div> */}
             <Header />
+            <ul className="accordion">
+                {accordionData.map(({ heading, content }) => (
+                    <MobileAccordionWP heading={heading} content={content} />
+                ))}
+            </ul>
             <Body />
             <PartnerCards />
         </>

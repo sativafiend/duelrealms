@@ -21,7 +21,7 @@ export const  MobileNav = ({}) => {
                 <a href='/Home'>Home</a>
             </li>
             <li>
-                <a href='/Whitepaper'>Whitepaper</a>
+                <a href='/Whitepaper'>Litepaper</a>
             </li>
             <li>
                 <a href='/Rules'>Rules</a>

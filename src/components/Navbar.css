@@ -166,7 +166,7 @@ a {
   }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1450px) {
     .duel__navbar-links_container {
         display: none;
     }

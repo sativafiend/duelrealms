@@ -1,63 +1,5 @@
 import styled from "styled-components";
 
-export const HomePage = styled.div`
-  height: 2612px;
-  background-color: #000000;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  margin: auto;
-  align-items: flex-end;
-  padding: 32px 0px 41px 0px;
-`
-
-export const WhitepaperPage = styled.div`
-  height: 5156px;
-  background-color: #000000;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  margin: auto;
-  align-items: flex-end;
-  padding: 32px 0px 41px 0px;
-`
-export const RulesPage = styled.div`
-  height: 7789px;
-  background-color: #000000;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  margin: auto;
-  align-items: flex-end;
-  padding: 32px 0px 41px 0px;
-  `
-
-  export const AlmanacPage = styled.div`
-  height: 1921px;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  margin: auto;
-  align-items: flex-end;
-  padding: 32px 0px 41px 0px;
-  background-repeat: no-repeat;
-  background-image: url("https://media.discordapp.net/attachments/927271953721618563/991145720272912445/unknown.png?width=659&height=660");
-  background-size: cover;
-  background-position: 50% 50%;
-  
-`
-
-export const TeamPage = styled.div`
-  height: 2630px;
-  background-color: #000000;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  margin: auto;
-  align-items: flex-end;
-  padding: 32px 0px 41px 0px;
-
-`
 
 
 export const AlmanacContainer = styled.div`
@@ -145,6 +87,21 @@ export const CardGlow = styled.div`
     0px 0px 19px 0px #eea61b, 0px 0px 38px 0px #eea61b, 0px 0px 65px 0px #eea61b,
     0px 0px 113px 0px #eea61b;
     border-radius: 20px;
+    animation: steam 20s linear infinite;
+
+    .CardGlow:before, .CardGlow:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
 `
 
 export const Card = styled.div`

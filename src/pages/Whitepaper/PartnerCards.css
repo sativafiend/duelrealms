@@ -1,6 +1,5 @@
 .duel__partnercards {
     display: flex;
-    margin-top: 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -41,8 +40,8 @@
 @media screen and (max-width: 650px) {
 
 
-    .duel__partnercards-content {
-        display: none;
-    }
+  .duel__partnercards{
+    display: none;
+}
 
 }
